@@ -6,7 +6,7 @@ function isEven(a){
   return a%2===0;
 }
 
-module.export = {
+module.exports = {
   add,
   isEven
 }

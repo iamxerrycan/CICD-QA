@@ -1,8 +1,6 @@
-// const {add , isEven} = require('../function/calculator.js');
+const { add, isEven } = require('../../function/calculator'); 
 
-import {add , isEven} from '../function/calculator.js';
-
-describe('calculator', ()=>{
+describe('calculator', () => {
   test('add function', () => {
     expect(add(1, 2)).toBe(3);
   });
@@ -10,5 +8,4 @@ describe('calculator', ()=>{
   test('isEven function', () => {
     expect(isEven(2)).toBe(true);
   });
-})
-
+});
