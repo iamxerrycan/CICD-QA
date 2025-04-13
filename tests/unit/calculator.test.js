@@ -1,4 +1,7 @@
-const { add, isEven } = require('../../function/calculator'); 
+const { add, isEven , asyncdata , dubarray } = require('../../function/calculator'); 
+
+
+
 
 describe('calculator', () => {
   test('add function', () => {
@@ -9,3 +12,20 @@ describe('calculator', () => {
     expect(isEven(2)).toBe(true);
   });
 });
+
+describe('asyncdata', () => {
+  test('asyncdata function', async () => {
+    const data = await asyncdata();
+    expect(data).toBe('async data here');
+  });
+}
+);
+
+describe('dubarray', () => {
+  test('dubarray function', () => {
+    const arr = [1, 2, 3, 4, 4, 5, 2, 9];
+    const newarr = dubarray(arr);
+    expect(newarr).toEqual([1, 2, 3, 4, 5,9]);
+  });
+} );
+
