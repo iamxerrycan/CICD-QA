@@ -8,3 +8,6 @@ describe("API Test", () => {
     expect(res.statusCode).toBe(200);
   });
 });
+console.log('====================================');
+console.log('Running API tests...');
+console.log('====================================');
