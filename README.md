@@ -18,3 +18,113 @@ This project demonstrates a professional-grade **plugin-style CI integration** o
 
 ## 🏗️ Project Structure
 
+CICD-QA/
+├── api/                        # Backend logic
+├── cypress/                   # Cypress end-to-end tests
+│   ├── e2e/
+│   ├── fixtures/
+│   ├── plugins/
+│   └── support/
+├── function/                  # Custom logic to test
+├── tests/
+│   ├── unit/                  # Jest unit tests
+│   ├── integration/          # Combined function/module tests
+│   ├── api/                  # API testing (Supertest or Postman export)
+│   ├── performance/          # JMeter/k6 test scripts
+│   └── visual/               # Percy/Cypress screenshot snapshots
+├── test-docs/                # Manual test cases, plans, bug reports
+│   ├── test-cases.md
+│   ├── bug-reports.md
+│   ├── test-plan.md
+│   └── test-scenarios.md
+├── .github/workflows/        # GitHub Actions CI
+├── README.md                 # Project summary
+├── jest.config.js
+├── cypress.config.js
+├── package.json
+└── postman_collection.json   # Optional: API tests in Postman format
+
+
+---
+
+## 🧪 Test Execution Proof
+
+✅ Unit Tests (Jest) – Pass  
+✅ End-to-End Tests (Cypress) – Pass via GitHub Actions
+
+📺 **Watch Full Cypress Test Run**  
+👉 [GitHub CI Logs](https://github.com/iamxerrycan/CICD-QA/actions)
+
+📸 **Screenshot:**
+![Test Screenshot](./cypress/screenshots/form.cy.js/test-run.png)
+
+---
+
+
+---
+
+## 🧪 Test Execution Proof
+
+✅ Unit Tests (Jest) – Pass  
+✅ End-to-End Tests (Cypress) – Pass via GitHub Actions
+
+📺 **Watch Cypress CI Test Run Logs**  
+👉 [GitHub CI Logs](https://github.com/iamxerrycan/CICD-QA/actions)
+
+📸 **Failure Screenshot Example:**  
+![Test Screenshot](./cypress/screenshots/form.cy.js/test-run.png)
+
+---
+
+## 🐞 Jira Bug Reporting Sample
+
+When a test fails, the plugin:
+
+1. Parses failure info from Cypress result
+2. Sends POST request to Jira API with:
+   - Bug title (from test title)
+   - Steps to reproduce
+   - Screenshot (optional)
+
+### 🔗 Example Bug (Jira):
+```json
+{
+  "fields": {
+    "project": { "key": "QA" },
+    "summary": "[BUG] Form validation failed on empty email",
+    "description": "Steps: \n1. Leave email empty\n2. Click Submit\nExpected: Error shown\nActual: Form submitted silently.",
+    "issuetype": { "name": "Bug" }
+  }
+}
+
+```
+
+---
+
+## 🐛 Sample Bug Report
+ID: BUG-001
+Module: Form Validation
+Severity: High
+Steps:
+
+Leave email blank
+
+Submit the form
+
+Expected: Error message
+Actual: Form submitted silently
+
+---
+
+## 📦 Tech Stack
+Cypress (E2E Automation)
+
+Jest (Unit Testing)
+
+Node.js + Express
+
+GitHub Actions / Jenkins
+
+Jira REST API
+
+---
