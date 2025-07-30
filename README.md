@@ -8,6 +8,37 @@ This project demonstrates a professional-grade **plugin-style CI integration** o
 
 ---
 
+## 🔁 1. Clone the Project
+
+```bash
+git clone https://github.com/iamxerrycan/CICD-QA.git
+cd CICD-QA
+```
+---
+
+## 📦 2. Install All Dependencies
+
+```bash
+
+npm install
+
+```
+---
+
+## 🧪 3. Run Tests Locally
+
+```bash
+
+npm run test:unit
+npm run test:integration
+npm run test:api
+npx cypress open
+npx cypress run
+
+```
+
+---
+
 ## 🧩 Features
 
 - 🧪 Automatically detects failed Cypress tests  
@@ -57,24 +88,8 @@ CICD-QA/
 📺 **Watch Full Cypress Test Run**  
 👉 [GitHub CI Logs](https://github.com/iamxerrycan/CICD-QA/actions)
 
-📸 **Screenshot:**
-![Test Screenshot](./cypress/screenshots/form.cy.js/test-run.png)
-
----
-
-
----
-
-## 🧪 Test Execution Proof
-
-✅ Unit Tests (Jest) – Pass  
-✅ End-to-End Tests (Cypress) – Pass via GitHub Actions
-
-📺 **Watch Cypress CI Test Run Logs**  
-👉 [GitHub CI Logs](https://github.com/iamxerrycan/CICD-QA/actions)
-
-📸 **Failure Screenshot Example:**  
-![Test Screenshot](./cypress/screenshots/form.cy.js/test-run.png)
+<!-- 📸 **Screenshot:**
+![Test Screenshot](./cypress/screenshots/form.cy.js/test-run.png) -->
 
 ---
 
