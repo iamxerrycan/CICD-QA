@@ -1,9 +1,9 @@
-const { validationfoem , submit } = require('../../function/formfalidation');
+const { validateForm , submit } = require('../../function/formfalidation')
 
-describe('validationfoem', () => {
-  test('validationfoem function', () => {
+describe('validateForm', () => {
+  test('validateForm function', () => {
     const formdata = {name:"sudhanshu", email:"sudhanshu@gmail.com", password:"123456"};
-    const error = validationfoem(formdata);
+    const error = validateForm(formdata);
     expect(error).toEqual({});
   });
 });    

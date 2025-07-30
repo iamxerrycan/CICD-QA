@@ -129,3 +129,26 @@ GitHub Actions / Jenkins
 Jira REST API
 
 ---
+
+## ✅ Phase-Wise QA Roadmap (Production Style)
+
+We'll go in this sequence – each with concept + practical:
+
+✅ Manual Planning → Test Plan, Test Scenarios, Test Cases, Bug Reports
+
+✅ Unit Testing with Jest → Business Logic Testing
+
+✅ API Testing with Jest + Supertest
+
+✅ Integration Testing
+
+✅ E2E Testing with Cypress
+
+✅ Visual Testing (Percy, optional)
+
+✅ Performance Testing (JMeter intro)
+
+✅ CI/CD (GitHub Actions)
+
+✅ Bonus: Test Coverage, Report Generation, Jira Integration
+

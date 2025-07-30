@@ -1,5 +1,6 @@
 export default{
-  tranceform:{
+  transform:{
     
   }
 }
+

@@ -4,17 +4,17 @@
   "description": "This project demonstrates a professional-grade **plugin-style CI integration** of: - ✅ Cypress for end-to-end testing - 🐞 Jira API for auto bug reporting - ⚙️ Jenkins (or GitHub Actions) for CI/CD automation",
   "main": "index.js",
   "type": "module",
-"scripts": {
-  "start": "node api/index.js",
-  "test": "jest",
-  "cypress": "cypress open",
-  "test:unit": "jest tests/unit",
-  "test:integration": "jest tests/integration",
-  "test:e2e": "cypress run",
-  "lint": "eslint .",
-  "format": "prettier --write .",
-  "all-tests": "npm run lint && npm run test:unit && npm run test:integration && npm run test:e2e"
-},
+  "scripts": {
+    "start": "node api/index.js",
+    "test": "jest",
+    "cypress": "cypress open",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "test:e2e": "cypress run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "all-tests": "npm run lint && npm run test:unit && npm run test:integration && npm run test:e2e"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -24,8 +24,12 @@
     "nodemon": "^3.1.9"
   },
   "devDependencies": {
-    "cypress": "^14.3.0",
-    "jest": "^29.7.0"
+    "@jest/globals": "^30.0.5",
+    "cypress": "^14.5.3",
+    "eslint": "^9.32.0",
+    "jest": "^30.0.5",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4"
   },
   "directories": {
     "test": "tests"

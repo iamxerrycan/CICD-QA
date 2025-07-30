@@ -1,7 +1,5 @@
-//formvalidation function
-
-let validationfoem = (formdata) => {
-  let error ={};
+let validateForm = (formdata) => {
+  let error = {};
   let name = formdata.name;
   let email = formdata.email;
   let password = formdata.password;
@@ -27,14 +25,12 @@ let validationfoem = (formdata) => {
   return error;
 }
 
+function submit(formdata) {
+  let error = validateForm(formdata);
 
-function submit (formdata){
-  let error = validationfoem(formdata);
-
-  if(Object.keys(error).length === 0){
+  if (Object.keys(error).length === 0) {
     console.log("Form submitted successfully");
-  }
-  else{
+  } else {
     console.log("Form submission failed");
     console.log(error);
   }
@@ -42,6 +38,6 @@ function submit (formdata){
 }
 
 module.exports = {
-  validationfoem,
+  validateForm,
   submit
-}
+};

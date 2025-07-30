@@ -1,32 +1,20 @@
+// functions/calculator.js
+
 function add(a, b) {
   return a + b;
 }
 
-function isEven(a) {
-  return a % 2 === 0;
+function subtract(a, b) {
+  return a - b;
 }
 
-function asyncdata() {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      res('async data here');
-    });
-  });
+function multiply(a, b) {
+  return a * b;
 }
 
-let dubarray = (arr)=>{
-  let newar = [];
-  for (let i = 0; i < arr.length; i++) {
-   if(!newar.includes(arr[i])){
-    newar.push(arr[i]);
-   }
-  }
-  return newar;
+function divide(a, b) {
+  if (b === 0) throw new Error("Cannot divide by zero");
+  return a / b;
 }
 
-module.exports = {
-  add,
-  isEven,
-  asyncdata,
-  dubarray
-};
+module.exports = { add, subtract, multiply, divide };
