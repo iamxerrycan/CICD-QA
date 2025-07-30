@@ -18,6 +18,7 @@ This project demonstrates a professional-grade **plugin-style CI integration** o
 
 ## 🏗️ Project Structure
 
+```
 CICD-QA/
 ├── api/                        # Backend logic
 ├── cypress/                   # Cypress end-to-end tests
@@ -44,7 +45,7 @@ CICD-QA/
 ├── package.json
 └── postman_collection.json   # Optional: API tests in Postman format
 
-
+```
 ---
 
 ## 🧪 Test Execution Proof
