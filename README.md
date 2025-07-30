@@ -2,8 +2,9 @@
 
 This project demonstrates a professional-grade **plugin-style CI integration** of:
 - ✅ Cypress for end-to-end testing
-- 🐞 Jira API for auto bug reporting
+- 🐞 Jira API for bug reporting
 - ⚙️ Jenkins (or GitHub Actions) for CI/CD automation
+- ✅ Unit testing , integration testing , api testing etc 
 
 ---
 
